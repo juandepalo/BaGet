@@ -27,12 +27,9 @@ keycloak
     ReactDOM.render(
       <Router>
         <App>
-          <Route
-            path="/nuget/packages/:id/:version?"
-            component={DisplayPackage}
-          />
+          <Route path="/packages/:id/:version?" component={DisplayPackage} />
 
-          <Route path="/nuget/upload" component={Upload} />
+          <Route path="/upload" component={Upload} />
         </App>
       </Router>,
       document.getElementById("root") as HTMLElement
