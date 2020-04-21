@@ -276,3 +276,5 @@ __pycache__/
 
 # Ignore database file
 **/baget.db 
+.vscode/settings.json
+.vscode/launch.json
