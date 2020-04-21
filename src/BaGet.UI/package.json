@@ -13,6 +13,7 @@
   "dependencies": {
     "bootstrap": "3.3.7",
     "copy-text-to-clipboard": "^2.1.1",
+    "keycloak-js": "^9.0.3",
     "office-ui-fabric-react": "^6.208.1",
     "react": "^16.6.3",
     "react-dom": "^16.6.3",

@@ -11,9 +11,12 @@ namespace BaGet.Configuration
         {
             options.AddPolicy(
                 CorsPolicy,
-                builder => builder.AllowAnyOrigin()
-                    .AllowAnyMethod()
-                    .AllowAnyHeader());
+                builder => builder.WithOrigins("http://localhost:21230", "http://localhost:50561",
+                "https://develop.qcompusoft.com",
+                "https://develop.qcompusoft.com/nuget")
+                .AllowAnyHeader()
+                .AllowCredentials()
+                .AllowAnyMethod());
         }
     }
 }
